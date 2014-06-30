@@ -58,6 +58,6 @@
   "bundledDependencies": [
     "clever-orm",
     "clever-auth",
-    "appMain"
+    "app-main"
   ]
 }

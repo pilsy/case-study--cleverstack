@@ -1,5 +1,5 @@
 {
-  "name": "appMain",
+  "name": "app-main",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -10,6 +10,7 @@
     "web": "www.jmrpineda.net"
   },
   "collaborators": [
+    "N/A"
   ],
   "description": "",
   "keywords": [

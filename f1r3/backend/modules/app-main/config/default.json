@@ -1,5 +1,5 @@
 {
-	"appMain": {
+	"app-main": {
 		"db": {
         	"driver": "ORM"
         },

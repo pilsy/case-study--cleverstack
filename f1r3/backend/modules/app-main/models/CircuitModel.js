@@ -1,7 +1,7 @@
 module.exports = function ( Model, config ) {
     return Model.extend( "Circuits",
     {
-        type: config['appMain'].driver,
+        type: config['app-main'].driver,
         softDeletable: true,
         timeStampable: true
     },
