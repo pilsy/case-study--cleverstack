@@ -1,0 +1,68 @@
+<div id="forum" ng-controller="ForumController">
+<div class="publicidad">Publicidad</div>
+</div>
+<br/>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <ul class="list-inline">
+            <li class="col-md-6">Canal</li>
+            <li class="col-md-1">Temas</li>
+            <li class="col-md-1">Mensajes</li>
+            <li class="col-md-4">Último mensaje</li>
+        </ul>
+    </div>
+    <ul class="list-group">
+            <li class="list-group-item" ng-repeat="chn in channels">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <!-- @if (Request.IsAuthenticated && Model.isAdmin)
+                            { -->
+                                <div ng-if="!!currentUser" class="">
+                                    <div class="col-md-1 hidden-sm" ng-if="currentUser.hasAdminRight">
+                                        <a class="btn btn-info btn-xs" href="@Url.Action("edit", "forum", new { type = "channel", id = chn.ChannelId })"><span class=" glyphicon glyphicon-cog"></span></a>
+                                    </div>
+                                    <div class="col-md-11 col-sm-12">
+                                        <h4 class="list-group-item-heading">
+                                                <span ng-if="!chn.isPublic" class="glyphicon glyphicon-lock" data-toggle="tooltip" data-placement="auto" title="El hilo es para usuarios registrados"></span>
+                                           <a href="{{chn.id}}" class="">
+                                                {{chn.name}}
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p class="list-group-item-text">{{chn.description}}</p>
+                                    </div>
+                                </div>
+                            <!-- }
+                            else
+                            { -->
+                            <div ng-if="!currentUser">
+                                <div class="col-md-12">
+                                    <h4 class="list-group-item-heading">
+                                            <span ng-if="!chn.isPublic" class="glyphicon glyphicon-lock"></span>
+                                        {{chn.name}}
+                                    </h4>
+                                </div>
+                                <div class="col-md-12">
+                                    <p class="list-group-item-text">{{chn.description}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 text-right"><span class="badge">{{chn.threads}}</span></div>
+                    <div class="col-md-1 text-right"><span class=" badge">{{chn.messages}}</span></div>
+                    <div class="col-md-4">
+                        <small >
+                            <a ng-href="{{chn.lastMessage.postId}}">
+                                <strong>{{chn.lastMessage.subject}}</strong>
+                            </a>
+                            
+                            <br />
+                            <span ng-if="!!chn.lastMessage.authorId">por <a href="{{chn.lastMessage.authorId}}">{{chn.lastMessage.author.name}}</a></span>
+                        </small>
+                    </div>
+                </div>
+            </li>
+    </ul>
+</div>

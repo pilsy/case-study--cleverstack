@@ -1,0 +1,22 @@
+{
+	"environmentName": "DEV",
+	"clever-orm": {
+    "db": {
+      "username": "jmr.pineda",
+      "password": "Sevilla$0",
+      "database": "formula1db",
+      "options": {
+        "dialect": "mysql",
+        "host": "127.0.0.1",
+        "port": "3306"
+      }
+    }
+  },
+  "clever-auth": {
+    "secretKey": "zyaJHymwf5CYj4GRIQ7T",
+    "driver": "ORM",
+    "sessionStorageDriver": "in-memory",
+    "hostUrl": "http://localhost:8080",
+    "email_confirmation": false
+  }
+}

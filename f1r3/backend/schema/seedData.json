@@ -1,0 +1,15 @@
+{
+  "UserModel": [
+    {
+      "username": "jmr.pineda",
+      "password": "a31a61e94f3799a9385dab9966c4c22c9f5790c4",
+      "email": "jmr.pineda@gmail.com",
+      "firstname": "Josema",
+      "lastname": "",
+      "phone": "",
+      "hasAdminRight": true,
+      "confirmed": true,
+      "active": true
+    }
+  ]
+}

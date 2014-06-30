@@ -1,0 +1,36 @@
+{
+  "UserModel": [
+    {
+      "username": "jmr.pineda",
+      "password": "60c1002e1535bd4323f57a40ca6cef43e972485f",
+      "email": "jmr.pineda@gmail.com",
+      "firstname": "Josema",
+      "lastname": "",
+      "phone": "",
+      "hasAdminRight": true,
+      "confirmed": true,
+      "active": true,
+      "hasForumRight": true,
+      "hasForumAdminRight": true,
+      "hasBetRight": true,
+      "hasBetPayed": true,
+      "betPayedAt": "2014-01-01"
+    },
+    {
+    	"username": "marga",
+      "password": "60c1002e1535bd4323f57a40ca6cef43e972485f",
+      "email": "marga.jimeneze@gmail.com",
+      "firstname": "Marga",
+      "lastname": "",
+      "phone": "",
+      "hasAdminRight": false,
+      "confirmed": true,
+      "active": true,
+      "hasForumRight": true,
+      "hasForumAdminRight": false,
+      "hasBetRight": true,
+      "hasBetPayed": true,
+      "betPayedAt": "2014-01-01"
+    }
+  ]
+}

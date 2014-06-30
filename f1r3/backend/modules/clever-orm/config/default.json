@@ -1,0 +1,17 @@
+{
+    "clever-orm": {
+        "db": {
+            "username": "jmr.pineda",
+            "password": "sevilla0",
+            "database": "formula1db",
+            "options": {
+                "host": "localhost",
+                "dialect": "mysql",
+                "port": 3306
+            }
+        },
+        "modelAssociations": {
+            "Example": {}
+        }
+    }
+}

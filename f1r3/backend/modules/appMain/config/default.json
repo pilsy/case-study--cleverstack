@@ -1,0 +1,10 @@
+{
+	"appMain": {
+		"db": {
+        	"driver": "ORM"
+        },
+        "modelAssociations": {
+            "Users": {}
+        }
+    }
+}

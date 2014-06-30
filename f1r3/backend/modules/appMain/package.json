@@ -1,0 +1,21 @@
+{
+  "name": "appMain",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+  },
+  "author": {
+    "name": "jmr.pineda",
+    "email": "jmr.pineda@gmail.com",
+    "web": "www.jmrpineda.net"
+  },
+  "collaborators": [
+  ],
+  "description": "",
+  "keywords": [
+    ""
+  ],
+  "main": "module.js",
+  "devDependencies": {
+  }
+}
